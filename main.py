@@ -7,5 +7,6 @@ def get_representative(locality: str):
     v=df["constituency"]
     for i in range(len(v)):
         if v[i]==locality:
-             return {"Name":df["Name"][i],"Phone No":df["Contact No"][i],"E-mail":df["E-mail ID"][i]}
+            dat={"Name":df["Name"][i],"Phone No":df["Contact No"][i],"E-mail":df["E-mail ID"][i]}
             break
+    return dat        
